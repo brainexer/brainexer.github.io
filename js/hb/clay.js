@@ -12,7 +12,7 @@ ClayUtils.addScore = function(id, score){
 	var boards = ClayUtils.boards;
 	ClayUtils.init();
 	function showBoard(){
-		boards[id].show( { limit: 100, filters: [ 'day', 'month', 'year'], best: false } );
+		boards[id].show( { limit: 100, filters: [ 'day', 'month', 'year'], best: false, showPersonal: true } );
 	}
 	Clay.ready( function() {
 		if(!boards[id]){
